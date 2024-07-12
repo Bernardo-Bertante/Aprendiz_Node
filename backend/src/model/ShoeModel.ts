@@ -17,6 +17,7 @@ Shoe.init(
         name: {
             type: DataTypes.STRING,
             allowNull: false,
+            unique: true,
         },
         model: {
             type: DataTypes.STRING,
@@ -32,7 +33,7 @@ Shoe.init(
         },
         image: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: true,
         },
         description: {
             type: DataTypes.TEXT,

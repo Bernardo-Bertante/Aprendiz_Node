@@ -5,7 +5,7 @@ const Shoe = z.object({
     model: z.string(),
     colorWay: z.string(),
     year: z.string(),
-    image: z.string(),
+    image: z.string().optional(),
     description: z.string(),
     price: z.number(),
     sizes: z.array(z.number()),
